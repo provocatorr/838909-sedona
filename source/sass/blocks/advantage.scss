@@ -1,0 +1,35 @@
+.advantage__description {
+  background-color: $main-color;
+}
+
+.advantage--secondary {
+  background-color: $lightgray;
+}
+
+.advantage__text--num-light {
+  color: #ffffff;
+}
+
+.advantage__text--num-dark {
+  color: #333333;
+}
+
+.advantage__bg {
+  padding: 0;
+  height: 260px;
+}
+
+.advantage__bg--1 {
+  background-color: #d5806d;
+  background-image: url("../img/main-city-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.advantage__bg--2 {
+  background-color: #d5806d;
+  background-image: url("../img/main-bridge-mobile@1x.jpg");
+  background-position: center 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

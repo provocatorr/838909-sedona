@@ -1,0 +1,25 @@
+@font-face {
+  font-weight: normal;
+  font-family: "PT Sans";
+  src: url("/fonts/ptsans.woff2") format("woff2"), url("/fonts/ptsans.woff") format("woff");
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-weight: bold;
+  font-family: "PT Sans";
+  src: url("/fonts/ptsansbold.woff2") format("woff2"), url("/fonts/ptsansbold.woff") format("woff");
+  font-style: normal;
+  font-display: swap;
+}
+
+html {
+  font-family: "PT Sans", "Arial", "Tahoma", sans-serif;
+  text-transform: uppercase;
+}
+
+body {
+  margin: 0;
+  text-align: center;
+}
