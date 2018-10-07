@@ -1,0 +1,14 @@
+.media__title {
+  @include font-title-media;
+  color: #000000;
+}
+
+.media__author {
+  @include font-media-author;
+  color: #333333;
+}
+
+.media__like-count {
+  @include font-title-media;
+  color: #000000;
+}

@@ -5,66 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Фото и видео</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
-    <header class="page-header">
-      <nav class="main-nav">
-        <button class="main-nav__close" type="button">Закрыть меню</button>
-        <ul class="main-nav__list">
-          <li class="site-list__item">
-            <a class="main-nav__link" href="#">Главная</a>
+    <header class="header">
+      <nav class="nav">
+        <button class="nav__close" type="button">Закрыть меню</button>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link link" href="index.html">Главная</a>
           </li>
-          <li class="site-list__item site-list__item--active">
-            <a class="main-nav__link" href="photo.html">Фото и видео</a>
+          <li class="nav__item nav__item--active">
+            <a class="nav__link link" href="#">Фото и видео</a>
           </li>
-          <li class="site-list__item">
-            <a class="main-nav__link" href="form.html">Форма отзыва</a>
+          <li class="nav__item">
+            <a class="nav__link link" href="form.html">Форма отзыва</a>
           </li>
-          <li class="site-list__item">
-            <a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
+          <li class="nav__item">
+            <a class="nav__link link" href="https://htmlacademy.ru/">HTML Academy</a>
           </li>
-          <li class="site-list__item site-list__item--logo">
+          <li class="nav__item nav__item--logo">
             <a class="header__logo logo" href="index.html">
-              <img src="#" alt="Sedona">
+              <img class="logo__image" src="img/logo-sedona-mobile.svg" alt="Sedona">
             </a>
           </li>
         </ul>
-        <button class="main-nav__open" type="button">Открыть меню</button>
+        <button class="nav__open" type="button">Открыть меню</button>
       </nav>
+      <section class="intro">
+        <div class="visualy-hidden">
+          <h1 class="intro__caption">Sedona</h1>
+        </div>
+      </section>
     </header>
 
     <main class="page-main">
-      <section class="intro">
-        <h1 class="intro__caption">Sedona</h1>
-      </section>
-
       <section class="description">
-        <p class="description__title">Фото и видео</p>
-        <p class="description__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+        <h2 class="description__title">Фото и видео</h2>
+        <p class="description__text">Не можете решиться на путешествие<br> из-за курса? Фотографии помогут<br> вам забыть о политике и экономике.</p>
       </section>
 
       <section class="media">
         <figure class="media__item">
-          <img class="media__photo" src="#" alt="Неродные просторы">
+          <img class="media__photo" src="img/photo-sunset-mobile@1x.jpg" alt="Неродные просторы">
           <p class="media__title">Неродные просторы</p>
           <p class="media__author">Автор фото: Борис</p>
           <span class="media__like-count">1350</span>
         </figure>
         <figure class="media__item">
-          <img class="media__photo" src="#" alt="Местная растительность">
+          <img class="media__photo" src="img/photo-cactus-mobile@1x.jpg" alt="Местная растительность">
           <p class="media__title">Местная растительность</p>
           <p class="media__author">Автор фото: Сергей</p>
           <span class="media__like-count">143</span>
         </figure>
         <figure class="media__item">
-          <img class="media__photo" src="#" alt="Дорога на север">
+          <img class="media__photo" src="img/photo-roads-mobile@1x.jpg" alt="Дорога на север">
           <p class="media__title">Дорога на север</p>
           <p class="media__author">Автор фото: Пётр</p>
           <span class="media__like-count">96</span>
         </figure>
         <figure class="media__item">
-          <img class="media__photo" src="#" alt="Мост дьявола">
+          <img class="media__photo" src="img/photo-bridge-mobile@1x.jpg" alt="Мост дьявола">
           <p class="media__title">Мост дьявола</p>
           <p class="media__author">Автор фото: Антон</p>
           <span class="media__like-count">254</span>
@@ -73,7 +75,7 @@
 
       <section class="prompt">
         <h2 class="prompt__title">Всё ещё сомневаетесь?</h2>
-        <p class="prompt__guide">Смотрите видео-презентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+        <p class="prompt__guide">Смотрите видео-презентацию<br> и скорее за билетами, пока они не<br> подорожали в очередной раз!</p>
         <video class="videoplayer" src="#" controls poster="#">
           <source src="#">
             Элемент video не поддерживается вашим браузером.
@@ -91,18 +93,18 @@
       </section>
     </main>
 
-    <footer class="social">
+    <footer class="footer">
       <div class="social">
         <h3 class="social__hashtag">#visitsedona</h3>
         <ul class="social-list">
           <li class="social-list__item" >
-            <a class="social-list__twitter" href="#">twitter</a>
+            <a class="social-list__twitter link" href="#">twitter</a>
           </li>
           <li class="social-list__item" >
-            <a class="social-list__fb" href="#">facebook</a>
+            <a class="social-list__fb link" href="#">facebook</a>
           </li>
           <li class="social-list__item" >
-            <a class="social-list__youtube" href="#">youtube</a>
+            <a class="social-list__youtube link" href="#">youtube</a>
           </li>
         </ul>
         <p class="author">Разработано</p>

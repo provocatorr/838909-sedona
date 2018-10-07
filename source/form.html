@@ -5,39 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Форма отзыва</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
-    <header class="page-header">
-      <nav class="main-nav">
-       <button class="main-nav__close" type="button">Закрыть меню</button>
-        <ul class="main-nav__list">
-          <li class="site-list__item">
-            <a class="main-nav__link" href="#">Главная</a>
+    <header class="header">
+      <nav class="nav">
+        <button class="nav__close" type="button">Закрыть меню</button>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link link" href="index.html">Главная</a>
           </li>
-          <li class="site-list__item">
-            <a class="main-nav__link" href="photo.html">Фото и видео</a>
+          <li class="nav__item">
+            <a class="nav__link link" href="photo.html">Фото и видео</a>
           </li>
-          <li class="site-list__item site-list__item--active">
-            <a class="main-nav__link" href="form.html">Форма отзыва</a>
+          <li class="nav__item nav__item--active">
+            <a class="nav__link link" href="#">Форма отзыва</a>
           </li>
-          <li class="site-list__item">
-            <a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
+          <li class="nav__item">
+            <a class="nav__link link" href="https://htmlacademy.ru/">HTML Academy</a>
           </li>
-          <li class="site-list__item site-list__item--logo">
+          <li class="nav__item nav__item--logo">
             <a class="header__logo logo" href="index.html">
-              <img src="#" alt="Sedona">
+              <img src="img/logo-sedona-mobile.svg" alt="Sedona">
             </a>
           </li>
         </ul>
-        <button class="main-nav__open" type="button">Открыть меню</button>
+        <button class="nav__open" type="button">Открыть меню</button>
       </nav>
+      <section class="intro">
+        <div class="visualy-hidden">
+          <h1 class="intro__caption">Sedona</h1>
+        </div>
+      </section>
     </header>
 
     <main class="page-main">
       <section class="description">
-        <p class="description__title">Оставьте свой отзыв</p>
-        <p class="description__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        <h2 class="description__title">Оставьте свой отзыв</h2>
+        <p class="description__text">Помогите нашим отелям стать лучше!<br> Оставьте отзыв о них, а также о<br> посещенных вами<br> достопримечательностях</p>
       </section>
 
       <section class="form">
@@ -57,42 +63,42 @@
             <input class="form__input" name="email" type="email" id="email" placeholder="Введите email">
 
           <h2 class="form__title form__border-top">Ваше общее впечатление:</h2>
-          <label class="form__label" for="good">Скорее положительное</label>
+          <label class="form__label form__label--answer" for="good">Скорее положительное</label>
             <input class="form__radio" name="impression-good" type="radio" id="good" checked>
-          <label class="form__label" for="bad">Скорее отрицательное</label>
+          <label class="form__label form__label--answer" for="bad">Скорее отрицательное</label>
             <input class="form__radio" name="impression-bad" type="radio" id="bad">
-          <label class="form__label" for="neutral">Затрудняюсь ответить</label>
+          <label class="form__label form__label--answer" for="neutral">Затрудняюсь ответить</label>
             <input class="form__radio" name="impression-neutral" type="radio" id="neutral">
 
           <h2 class="form__title form__border-top">Посещенные достопримечательности:</h2>
-          <label class="form__label" for="devil-bridge">Мост Дьявола</label>
+          <label class="form__label form__label--answer" for="devil-bridge">Мост Дьявола</label>
             <input class="form__checkbox" name="visit-devil-bridge" type="checkbox" id="devil-bridge" checked>
-          <label class="form__label" for="mountain-bell">Гора-Колокол</label>
+          <label class="form__label form__label--answer" for="mountain-bell">Гора-Колокол</label>
             <input class="form__checkbox" name="get-visit-mountain-bell" type="checkbox" id="mountain-bell">
-          <label class="form__label" for="slide-park">Слайд-парк</label>
+          <label class="form__label form__label--answer" for="slide-park">Слайд-парк</label>
             <input class="form__checkbox" name="visit-slide-park" type="checkbox" id="slide-park">
-          <label class="form__label" for="red-rock">Красные скалы</label>
+          <label class="form__label form__label--answer" for="red-rock">Красные скалы</label>
             <input class="form__checkbox" name="visit-red-rock" type="checkbox" id="red-rock">
 
-          <h2 class="form__title form__border-top">Опишите свои эмоции:</h2>
+          <h2 class="form__title">Опишите свои эмоции:</h2>
           <input class="form__input form__input--comment" type="textarea" name="comment" placeholder="Опишите подробно все свои восторги">
         </form>
         <button class="button" type="submit">Отправить отзыв</button>
       </section>
     </main>
 
-    <footer class="social">
+    <footer class="footer">
       <div class="social">
         <h3 class="social__hashtag">#visitsedona</h3>
         <ul class="social-list">
           <li class="social-list__item" >
-            <a class="social-list__twitter" href="#">twitter</a>
+            <a class="social-list__twitter link" href="#">twitter</a>
+            </li>
+          <li class="social-list__item" >
+            <a class="social-list__fb link" href="#">facebook</a>
           </li>
           <li class="social-list__item" >
-            <a class="social-list__fb" href="#">facebook</a>
-          </li>
-          <li class="social-list__item" >
-            <a class="social-list__youtube" href="#">youtube</a>
+            <a class="social-list__youtube link" href="#">youtube</a>
           </li>
         </ul>
         <p class="author">Разработано</p>

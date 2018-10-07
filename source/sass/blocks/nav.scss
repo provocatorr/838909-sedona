@@ -1,0 +1,12 @@
+.nav {
+  background-color: $main-color;
+}
+
+.nav__list {
+  list-style-type: none;
+}
+
+.nav__link {
+  @include font-nav;
+  color: #ffffff;
+}

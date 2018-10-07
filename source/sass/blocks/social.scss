@@ -1,0 +1,9 @@
+.social-list {
+  list-style-type: none;
+}
+
+.social__hashtag {
+  @include font-title;
+  font-size: 21px;
+  color: #000000;
+}

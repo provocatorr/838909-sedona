@@ -1,0 +1,9 @@
+.prompt__title {
+  @include font-title;
+  color: #000000;
+}
+
+.prompt__guide {
+  @include font-prompt-guide;
+  color: #000000;
+}

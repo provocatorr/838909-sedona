@@ -1,0 +1,5 @@
+.button {
+  @include font-btn;
+  color: #ffffff;
+  background-color: $main-color;
+}
