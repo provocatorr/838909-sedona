@@ -1,11 +1,10 @@
-.find-hotel__title {
+.description__title {
   @include font-title;
-  font-size: 21px;
   color: #000000;
 }
 
-.find-hotel__text {
-  @include font-text;
+.description__text {
+  @include font-text-description;
   line-height: 24px;
   color: #333333;
 }

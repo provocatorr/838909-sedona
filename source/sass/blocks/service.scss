@@ -1,3 +1,13 @@
 .service {
   list-style-type: none;
 }
+
+.service__title {
+  @include font-title;
+  color: #000000;
+}
+
+.service__text {
+  @include font-text;
+  color: #333333;
+}

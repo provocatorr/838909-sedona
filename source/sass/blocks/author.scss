@@ -1,6 +1,4 @@
 .author {
-  font-size: 14px;
-  font-weight: normal;
-  line-height: 26px;
+  @include font-author;
   color: #000000;
 }

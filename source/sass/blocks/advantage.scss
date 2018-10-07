@@ -2,8 +2,22 @@
   background-color: $main-color;
 }
 
-.advantage--secondary {
-  background-color: $lightgray;
+.advantage__title {
+  @include font-title;
+  color: #ffffff;
+}
+
+.advantage__title--dark {
+  color: #000000;
+}
+
+.advantage__text {
+  @include font-text;
+  color: #ffffff;
+}
+
+.advantage__text--dark {
+  color: #333333;
 }
 
 .advantage__text--num-light {
@@ -12,6 +26,10 @@
 
 .advantage__text--num-dark {
   color: #333333;
+}
+
+.advantage--secondary {
+  background-color: $lightgray;
 }
 
 .advantage__bg {
